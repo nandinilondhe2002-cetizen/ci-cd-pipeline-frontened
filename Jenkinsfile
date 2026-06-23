@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'S3_BUCKET', defaultValue: 'ci-cd-workshop-frontend-<your-name>', description: 'S3 Bucket for frontend deployment')
+        string(name: 'S3_BUCKET', defaultValue: 'ci-cd-project-nandini', description: 'S3 Bucket for frontend deployment')
     }
 
     environment {
