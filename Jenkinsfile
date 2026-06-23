@@ -13,8 +13,8 @@ pipeline {
         stage('Deploy to S3') {
             steps {
                 sh """
-               /usr/local/bin/aws s3 cp ./index.html s3://$BUCKET/
-               /usr/local/bin/aws s3 cp ./frontend_version.json s3://$BUCKET/
+               aws s3 cp ./index.html s3://$BUCKET/
+               aws s3 cp ./frontend_version.json s3://$BUCKET/
                 """
             }
         }
